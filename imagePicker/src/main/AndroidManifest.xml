@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <queries>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+    </queries>
+    <application>
+        <provider
+            android:name=".ImagePickerContent"
+            android:authorities="${applicationId}.image_picker_module_content"
+            android:exported="false" />
+    </application>
+</manifest>
